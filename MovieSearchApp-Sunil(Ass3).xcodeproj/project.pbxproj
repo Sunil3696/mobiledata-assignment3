@@ -16,6 +16,8 @@
 		1015372A2C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101537292C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_Tests.swift */; };
 		101537342C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101537332C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITests.swift */; };
 		101537362C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101537352C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITestsLaunchTests.swift */; };
+		10A7489F2C5248E50053F6B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A7489E2C5248E50053F6B5 /* SearchViewController.swift */; };
+		10A748A12C52493E0053F6B5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A748A02C52493E0053F6B5 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		1015372F2C5246D400EDD4CB /* MovieSearchApp-Sunil(Ass3)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MovieSearchApp-Sunil(Ass3)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		101537332C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchApp_Sunil_Ass3_UITests.swift; sourceTree = "<group>"; };
 		101537352C5246D400EDD4CB /* MovieSearchApp_Sunil_Ass3_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieSearchApp_Sunil_Ass3_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		10A7489E2C5248E50053F6B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		10A748A02C52493E0053F6B5 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				1015371B2C5246D400EDD4CB /* Assets.xcassets */,
 				1015371D2C5246D400EDD4CB /* LaunchScreen.storyboard */,
 				101537202C5246D400EDD4CB /* Info.plist */,
+				10A7489E2C5248E50053F6B5 /* SearchViewController.swift */,
+				10A748A02C52493E0053F6B5 /* DetailViewController.swift */,
 			);
 			path = "MovieSearchApp-Sunil(Ass3)";
 			sourceTree = "<group>";
@@ -260,6 +266,8 @@
 			files = (
 				101537172C5246D300EDD4CB /* ViewController.swift in Sources */,
 				101537132C5246D300EDD4CB /* AppDelegate.swift in Sources */,
+				10A748A12C52493E0053F6B5 /* DetailViewController.swift in Sources */,
+				10A7489F2C5248E50053F6B5 /* SearchViewController.swift in Sources */,
 				101537152C5246D300EDD4CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
