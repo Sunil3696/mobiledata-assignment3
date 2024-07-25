@@ -22,6 +22,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var runtimeLabel: UILabel!
     
     
+    @IBOutlet weak var awardsgained: UILabel!
     
     @IBOutlet weak var genreLabel: UILabel!
     
@@ -81,6 +82,7 @@ class DetailViewController: UIViewController {
         plotLabel.text = movie.Plot
         languageLabel.text = movie.Language
         countryLabel.text = movie.Country
+        awardsgained.text = movie.Awards
 
         if let posterURL = movie.Poster, let url = URL(string: posterURL) {
             DispatchQueue.global().async {
@@ -107,6 +109,7 @@ struct MovieDetails: Codable {
     let Plot: String
     let Language: String
     let Country: String
+    let Awards: String
     let Poster: String?
 }
     
