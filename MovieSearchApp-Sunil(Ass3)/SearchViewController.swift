@@ -27,10 +27,19 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
           tableView.dataSource = self
           tableView.delegate = self
       }
-
-      func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-          fetchMovies(query: searchText)
-      }
+    
+    
+    @IBAction func searchButtonTouched(_ sender: UIButton) {
+        
+        let searchParam = searchBar.searchTextField.text!
+        
+//        print(searchParam)
+        fetchMovies(query: searchParam)
+    }
+    
+//      func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//          fetchMovies(query: searchText)
+//      }
 
       func fetchMovies(query: String) {
           let urlString = "https://www.omdbapi.com/?s=\(query)&apikey=576b4e31"
