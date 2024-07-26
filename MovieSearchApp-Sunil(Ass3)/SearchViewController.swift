@@ -89,7 +89,7 @@ class SearchViewController: UIViewController, UITableViewDataSource, UITableView
           let movie = movies[indexPath.row]
           cell.titleLabel.text = movie.Title
           cell.studioLabel.text = movie.Genre
-          cell.yearLabel.text = movie.Year
+          cell.yearLabel.text = "Rating:  \(movie.Rated!) | Released year: \(movie.Year)"
 
           if let posterURL = movie.Poster, let url = URL(string: posterURL) {
               DispatchQueue.global().async {
