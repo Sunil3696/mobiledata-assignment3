@@ -86,7 +86,7 @@
                                             <outlet property="studioLabel" destination="iJo-lj-XTd" id="tnl-01-zol"/>
                                             <outlet property="titleLabel" destination="F2p-ml-bnL" id="xHT-cq-eYt"/>
                                             <outlet property="yearLabel" destination="yWn-gP-sUe" id="Aeu-dd-3qp"/>
-                                            <segue destination="ce4-3h-bfc" kind="showDetail" identifier="ShowMovieDetail" id="lEe-Nc-kOe"/>
+                                            <segue destination="ce4-3h-bfc" kind="show" identifier="ShowMovieDetail" id="fkf-W7-GAA"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -109,15 +109,15 @@
         <scene sceneID="99E-Yh-nza">
             <objects>
                 <viewController id="ce4-3h-bfc" customClass="DetailViewController" customModule="MovieSearchApp_Sunil_Ass3_" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="Akd-pI-62v">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                    <view key="view" contentMode="scaleToFill" id="Akd-pI-62v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-C1-uNe">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDb-C1-uNe">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eF4-qG-Uld">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="700"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eF4-qG-Uld">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1500"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Tr6-3p-TUw">
                                                 <rect key="frame" x="8" y="8" width="377" height="344"/>
@@ -364,7 +364,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eOV-Jl-7UH">
-                                                <rect key="frame" x="8" y="445.66666666666669" width="377" height="20.333333333333314"/>
+                                                <rect key="frame" x="8" y="445.66666666666663" width="377" height="20.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rated: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyX-uD-fWV">
                                                         <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="20.333333333333332"/>
@@ -381,7 +381,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BGe-9q-e8A">
-                                                <rect key="frame" x="8" y="415.33333333333331" width="377" height="20.333333333333314"/>
+                                                <rect key="frame" x="8" y="415.33333333333337" width="377" height="20.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mE-jr-p94">
                                                         <rect key="frame" x="0.0" y="0.0" width="184.66666666666666" height="20.333333333333332"/>
@@ -494,6 +494,7 @@
                             <constraint firstAttribute="bottom" secondItem="lDb-C1-uNe" secondAttribute="bottom" id="lIH-Bw-q1M"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3se-B2-eQ4"/>
                     <size key="freeformSize" width="393" height="852"/>
                     <connections>
                         <outlet property="actorsLabel" destination="TBH-6f-Q9p" id="aci-QO-5Ue"/>
