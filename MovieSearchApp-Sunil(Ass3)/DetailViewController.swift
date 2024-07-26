@@ -41,6 +41,20 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var posterImageView: UIImageView!
     
+    
+    @IBOutlet weak var imdbratingLabel: UILabel!
+    
+    
+    @IBOutlet weak var boxoficeLabel: UILabel!
+    
+    
+    
+    @IBOutlet weak var imdbvotesLabel: UILabel!
+    
+    
+    @IBOutlet weak var typeLabel: UILabel!
+    
+    
     var imdbID: String?
 
     override func viewDidLoad() {
@@ -83,6 +97,10 @@ class DetailViewController: UIViewController {
         languageLabel.text = movie.Language
         countryLabel.text = movie.Country
         awardsgained.text = movie.Awards
+        imdbratingLabel.text = movie.imdbRating
+        imdbvotesLabel.text = movie.imdbVotes
+        boxoficeLabel.text = movie.BoxOffice
+        typeLabel.text = movie.Metascore
 
         if let posterURL = movie.Poster, let url = URL(string: posterURL) {
             DispatchQueue.global().async {
@@ -111,6 +129,10 @@ struct MovieDetails: Codable {
     let Country: String
     let Awards: String
     let Poster: String?
+    let imdbRating: String?
+    let imdbVotes: String?
+    let BoxOffice: String?
+    let Metascore: String?
 }
     
 
